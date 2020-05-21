@@ -173,7 +173,7 @@ if (GLFW_INSTALL)
     install(TARGETS glfw
             EXPORT glfwTargets
             RUNTIME DESTINATION "bin"
-            ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
-            LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
+            ARCHIVE DESTINATION ${CMAKE_SYSTEM_NAME}/lib
+            LIBRARY DESTINATION ${CMAKE_SYSTEM_NAME}/lib)
 endif()
 
